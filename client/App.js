@@ -3,7 +3,7 @@ import { hot } from 'react-hot-loader';
 import io from 'socket.io-client';
 import styles from './App.css';
 
-import MessageForm from './MessageForm';
+import MessageForm from './MessageForm.js';
 import MessageList from './MessageList';
 import UsersList from './UsersList';
 import UserForm from './UserForm';
@@ -42,7 +42,7 @@ class App extends Component {
                     <UsersList
                         users={this.state.users}
                     />
-                    <div className={style.MessageWrapper}>
+                    <div className={styles.MessageWrapper}>
                         <MessageList
                             messages={this.state.messages}
                         />
